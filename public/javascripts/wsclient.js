@@ -1,4 +1,4 @@
-var num = 150;
+var num = 116;
 window.URL = window.URL || window.webkitURL;
 window.WebSocket = window.WebSocket || window.MozWebSocket;
 
@@ -88,7 +88,7 @@ var withHTTP = function(){
 
 		var getImg = function(id) {
 			out.append("<img id='httptest" + id + "'src='/logo/" + id + "?"
-					+ new Date().getTime() + "'>");
+					+ new Date().getTime() + "width='32' height='32''>");
 
 			$("#httptest" + id).bind("load", function() {
 				count += 1;

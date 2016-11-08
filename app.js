@@ -32,6 +32,7 @@ app.configure('production', function(){
 // Routes
 
 app.get('/', routes.index);
+// /logo_:id はhtml画像を返す
 app.get('/logo/:id', function(req, res){
   fs.readFile(__dirname + '/public/images/html5-32.png', function(e, data) {
     res.header("Content-Type", "image/png");
